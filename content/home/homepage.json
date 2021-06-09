@@ -2,18 +2,21 @@
   "title": "Home",
   "content": "intro.md",
   "gallery": [{
-    "title": "React Context",
-    "copy": "For global styles.",
-    "image": "../images/gallery/react-context.jpg"
+    "title": "Beautiful Tools for your Journey",
+    "copy": "AJOTO",
+    "image": "../images/gallery/react-context.jpg",
+    "slug": "ajoto"
   },
   {
     "title": "Page Transitions",
-    "copy": "Component-based for easy usage.",
-    "image": "../images/gallery/page-transitions.jpg"
+    "copy": "FieldLogs",
+    "image": "../images/gallery/page-transitions.jpg",
+    "slug": "fieldlogs"
   },
   {
     "title": "Intersection Observer",
-    "copy": "Including a polyfill for Safari.",
-    "image": "../images/gallery/intersection-observer.jpg"
+    "copy": "Mass Responsive Device",
+    "image": "../images/gallery/intersection-observer.jpg",
+    "slug": "mrd"
   }]
 }

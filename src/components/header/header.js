@@ -5,20 +5,23 @@ import posed from 'react-pose';
 import { Container } from './header.css';
 import Title from 'components/title';
 import Nav from 'components/header/nav';
+import { timeout } from 'constants/transition';
 
 // Example of a component-specific page transition
 const AnimatedContainer = posed.div({
   enter: {
-    y: 0,
+    opacity: 1,
     transition: {
       ease: 'easeInOut',
     },
+    delay: timeout*2
   },
   exit: {
-    y: '-100%',
+    opacity: 0,
     transition: {
       ease: 'easeInOut',
     },
+    delay: timeout*2
   },
 });
 

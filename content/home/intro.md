@@ -1,1 +1,3 @@
-An opinionated starter for using Gatsby v2 with React Context, tag-agnostic styled-components, page transitions and scroll events with IntersectionObserver.
+Salut 👋 I'm a multi-disciplinary designer with experience working in agencies, start-ups and multi-nationals. I love working with others to make beautiful, useful, sustainable things so we increase the likelihood of a good future.
+
+I am currently Design Lead at [FJORD](https://fjordnet.com).
