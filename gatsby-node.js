@@ -17,3 +17,27 @@ exports.onCreateWebpackConfig = ({
     },
   });
 };
+
+// exports.createPages = async function ({ actions, graphql }) {
+//   const { data } = await graphql(`
+//     query {
+//       allHomeJson {
+//         edges {
+//           node {
+//             gallery {
+//               slug
+//             }
+//           }
+//         }
+//       }
+//     }
+//   `)
+//   data.allHomeJson.edges.forEach(edge => {
+//     const slug = edge.node.gallery.slug
+//     actions.createPage({
+//       path: slug,
+//       component: require.resolve(`./src/pages/post.js`),
+//       context: { slug: slug },
+//     })
+//   })
+// }
