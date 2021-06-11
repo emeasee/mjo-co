@@ -11,13 +11,13 @@ const Index = ({ data }) => (
     <Box>
       <Title as="h2" size="large">
         <div
-        dangerouslySetInnerHTML={{
-          __html: data.homeJson.content.childMarkdownRemark.html,
-        }}
-      />
+          dangerouslySetInnerHTML={{
+            __html: data.homeJson.content.childMarkdownRemark.html,
+          }}
+        />
       </Title>
     </Box>
-    <Gallery items={data.homeJson.gallery} />
+    <Gallery items={data.allMarkdownRemark.nodes} />
   </Layout>
 );
 
@@ -48,6 +48,29 @@ export const query = graphql`
           }
         }
         slug
+      }
+    }
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/(posts)/" } }
+    ) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          cover {
+            childImageSharp {
+              fluid(maxHeight: 500, quality: 90) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
       }
     }
   }
