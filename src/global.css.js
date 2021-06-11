@@ -1,7 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
-import { accent } from 'constants/theme';
+import * as Theme from 'constants/theme';
 
 export default createGlobalStyle`
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+  }
+
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -30,13 +36,13 @@ export default createGlobalStyle`
   }
 
   html {
-    font-size: 62.5%;
+    font-size: ${Theme.fontSize_root};
   }
 
   body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    line-height: 1;
-    font-size: 1.6rem;
+    font-family: ${Theme.fontFamily_sans};
+    line-height: ${Theme.lineHeight_none};
+    font-size: ${Theme.fontSize_3};
     color: #000;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -46,6 +52,12 @@ export default createGlobalStyle`
     -webkit-font-feature-settings: "pnum";
     font-feature-settings: "pnum";
     font-variant-numeric: proportional-nums;
+  }
+
+  hr{
+    background: ${Theme.color_accent};
+    height: 1px;
+    border: 0;
   }
 
   ol, ul {
@@ -68,18 +80,18 @@ export default createGlobalStyle`
   }
 
   a {
-    color: ${accent};
+    color: ${Theme.color_accent};
   }
 
   pre {
     display: block;
-    padding: 2rem;
+    padding: ${Theme.spacing_8};
     margin-top: 4rem;
     overflow: auto;
     font-size: 85%;
     line-height: 1.45;
     border-radius: 5px;
-    color: ${accent};
+    color: ${Theme.color_accent};
     border: 1px solid #ddd;
     font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
   }

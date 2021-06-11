@@ -4,10 +4,12 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
+import Slides from 'components/slide';
 
 const Post = ({ data }) => (
   <Layout>
     <Head pageTitle={data.markdownRemark.frontmatter.title} />
+    {data.markdownRemark.frontmatter.slides && <Slides frontmatter={data.markdownRemark.frontmatter}/>}
     <Box>
       <div
         dangerouslySetInnerHTML={{
@@ -37,7 +39,15 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
+        description 
+        cover {
+          childImageSharp {
+            fluid(maxHeight: 500, quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        slides
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
