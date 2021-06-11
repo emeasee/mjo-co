@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
+    `gatsby-remark-prismjs`,
     `gatsby-transformer-json`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-eslint`,

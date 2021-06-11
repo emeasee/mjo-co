@@ -2,6 +2,9 @@ import React from 'react';
 import AppProvider from 'store/provider';
 import wrapPageElementWithTransition from 'helpers/wrapPageElement';
 
+// Highlighting for code blocks
+import "prismjs/themes/prism.css"
+
 // React Context in Browser
 // eslint-disable-next-line react/prop-types
 export const wrapRootElement = ({ element }) => {
