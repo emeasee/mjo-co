@@ -13,7 +13,13 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-transformer-json`,
     `gatsby-transformer-remark`,
-    "gatsby-plugin-loadable-components-ssr",
+    `gatsby-plugin-loadable-components-ssr`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        nameSpace: "mjo",
+      },
+    },
     `gatsby-plugin-eslint`,
     {
       resolve: `gatsby-source-filesystem`,
