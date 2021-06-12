@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        nameSpace: "mjo",
+        namespace: "mjo",
       },
     },
     `gatsby-plugin-eslint`,
