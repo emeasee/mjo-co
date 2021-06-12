@@ -14,14 +14,14 @@ const AnimatedContainer = posed.div({
     transition: {
       ease: 'easeInOut',
     },
-    delay: timeout*2
+    delay: timeout * 2,
   },
   exit: {
     opacity: 0,
     transition: {
       ease: 'easeInOut',
     },
-    delay: timeout*2
+    delay: timeout * 2,
   },
 });
 
