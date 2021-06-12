@@ -45,7 +45,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-webpack-size`,
     {
       resolve: `gatsby-plugin-react-svg`,
       options: {
