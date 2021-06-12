@@ -4,12 +4,18 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
-import Slides from 'components/slide';
+import loadable from '@loadable/component';
+
+const SlidesFrame = loadable(() => import('components/slide'), {
+  fallback: <div>Loading...</div>,
+});
 
 const Post = ({ data }) => (
   <Layout>
     <Head pageTitle={data.markdownRemark.frontmatter.title} />
-    {data.markdownRemark.frontmatter.slides && <Slides frontmatter={data.markdownRemark.frontmatter}/>}
+    {data.markdownRemark.frontmatter.slides && (
+      <SlidesFrame frontmatter={data.markdownRemark.frontmatter} />
+    )}
     <Box>
       <div
         dangerouslySetInnerHTML={{
@@ -39,12 +45,10 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description 
+        description
         cover {
           childImageSharp {
-            fluid(maxHeight: 500, quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(layout: FULL_WIDTH, quality: 90)
           }
         }
         slides

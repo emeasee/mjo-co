@@ -37,18 +37,6 @@ export const query = graphql`
           rawMarkdownBody
         }
       }
-      gallery {
-        title
-        copy
-        image {
-          childImageSharp {
-            fluid(maxHeight: 500, quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-        slug
-      }
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
@@ -65,9 +53,7 @@ export const query = graphql`
           description
           cover {
             childImageSharp {
-              fluid(maxHeight: 500, quality: 90) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(layout: CONSTRAINED, height: 500, quality: 90)
             }
           }
         }

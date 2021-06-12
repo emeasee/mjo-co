@@ -3,14 +3,14 @@ export const maxWidth_xs = '20rem';
 export const maxWidth_sm = '24rem';
 export const maxWidth_md = '28rem';
 export const maxWidth_lg = '32rem';
-export const maxWidth_xl = '36rem';
-export const maxWidth_2xl = '42rem';
-export const maxWidth_3xl = '48rem';
-export const maxWidth_4xl = '56rem';
-export const maxWidth_full = "100%";
-export const maxWidth_wrapper = {maxWidth_2xl};
+export const maxWidth_xl = '46rem';
+export const maxWidth_2xl = '58rem';
+export const maxWidth_3xl = '66rem';
+export const maxWidth_4xl = '72rem';
+export const maxWidth_full = '100%';
+export const maxWidth_wrapper = maxWidth_4xl;
 
-export const spacing_px = "1px";
+export const spacing_px = '1px';
 export const spacing_0 = '0';
 export const spacing_1 = '0.25rem';
 export const spacing_2 = '0.5rem';
@@ -25,10 +25,11 @@ export const spacing_16 = '4rem';
 export const spacing_20 = '5rem';
 export const spacing_24 = '6rem';
 export const spacing_32 = '8rem';
-export const fontFamily_sans = '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"';
+export const fontFamily_sans =
+  '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"';
 export const fontFamily_serif = '';
-export const font_body = {fontFamily_serif};
-export const font_heading = {fontFamily_sans};
+export const font_body = fontFamily_serif;
+export const font_heading = fontFamily_sans;
 
 export const fontWeight_normal = '400';
 export const fontWeight_medium = '500';

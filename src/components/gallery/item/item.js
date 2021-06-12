@@ -1,22 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { Title, Copy } from './item.css';
 
 const Item = ({ fields, frontmatter }) => (
   <figure>
-    <Link to={fields.slug}><Img fluid={frontmatter.cover ? frontmatter.cover.childImageSharp.fluid : {}} alt={frontmatter.title} /></Link>
+    <Link to={fields.slug}>
+      <GatsbyImage
+        image={getImage(frontmatter.cover)}
+        alt={frontmatter.title}
+      />
+    </Link>
     <figcaption>
       <Title>{frontmatter.title}</Title>
       <Copy>{frontmatter.description}</Copy>
     </figcaption>
   </figure>
-); 
+);
 
 Item.propTypes = {
   fields: PropTypes.object.isRequired,
-  frontmatter: PropTypes.object.isRequired
+  frontmatter: PropTypes.object.isRequired,
 };
 
 export default Item;
