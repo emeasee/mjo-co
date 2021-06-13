@@ -41,7 +41,7 @@ export const fontWeight_black = '900';
 export const fontSize_root = '10px';
 export const lineHeight_none = '1';
 export const lineHeight_tight = '1.1';
-export const lineHeight_normal = '1.5';
+export const lineHeight_normal = '1.3';
 export const lineHeight_relaxed = '1.625';
 
 /* 1.200 Minor Third Type Scale */
@@ -54,7 +54,7 @@ export const fontSize_5 = '2.074rem';
 export const fontSize_6 = '2.488rem';
 export const fontSize_7 = '2.986rem';
 
-export const color_primary = '#005b99';
+export const color_primary = '#757575';
 export const color_text = '#2e353f';
 export const color_text_light = '#4f5969';
 export const color_heading = '#1a202c';
