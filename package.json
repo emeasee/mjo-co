@@ -9,7 +9,7 @@
     "format": "prettier --config ./.prettierrc --write src/**/*.{css,js}",
     "build:dir": "mkdirp ./public/icons/",
     "build:favicons": "node scripts/favicons",
-    "build:encrypt": "find ./public/posts/private/ -type f -name '*.html' -exec staticrypt {} mypassword -o {} \\;",
+    "build:encrypt": "cross-var find ./public/posts/private/ -type f -name '*.html' -exec staticrypt {} $PASSWORD -o {} \\;",
     "build": "npm run build:dir && npm run build:favicons && gatsby build && npm run build:encrypt",
     "test": "ava **/*.test.js --verbose",
     "clean": "gatsby clean"
@@ -25,6 +25,7 @@
     "@reach/router": "^1.2.1",
     "@reach/visually-hidden": "^0.15.0",
     "babel-plugin-styled-components": "^1.10.0",
+    "cross-var": "^1.1.0",
     "eslint-webpack-plugin": "^2.5.4",
     "gatsby": "^3.7.1",
     "gatsby-plugin-image": "^1.7.1",
