@@ -22,6 +22,7 @@ export const Text = styled.span`
       }
     }};
   line-height: 1.2;
+  margin: 0;
 
   ${MEDIA.TABLET`
     font-size: ${({ size }) =>

@@ -3,5 +3,9 @@ import * as Theme from 'constants/theme';
 
 export const Container = styled.div`
   padding: ${Theme.spacing_8} ${Theme.spacing_16};
-  max-width: ${Theme.maxWidth_3xl};
+  max-width: ${Theme.maxWidth_4xl};
+
+  .gatsby-resp-iframe-wrapper {
+    border: 2px solid #f5f5f5;
+  }
 `;

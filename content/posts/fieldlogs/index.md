@@ -1,7 +1,7 @@
 ---
-title: Beautiful Tools for your Journey
-date: "2021-06-11"
-description: "AJOTO"
+title: Standardize capture of field data
+date: "2021-05-10"
+description: "FieldLogs"
 cover: "intersection-observer.jpg"
 ---
 
