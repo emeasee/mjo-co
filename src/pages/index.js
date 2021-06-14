@@ -5,6 +5,7 @@ import Box from 'components/box';
 import Title from 'components/title';
 import Gallery from 'components/gallery';
 import { graphql } from 'gatsby';
+import P5 from 'components/p5';
 
 const Index = ({ data }) => (
   <Layout>
@@ -18,6 +19,7 @@ const Index = ({ data }) => (
       </Title>
     </Box>
     <Gallery items={data.allMarkdownRemark.nodes} />
+    <P5 />
   </Layout>
 );
 

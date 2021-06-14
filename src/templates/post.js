@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
-//import loadable from '@loadable/component';
 
 const Post = ({ data }) => (
   <Layout>
