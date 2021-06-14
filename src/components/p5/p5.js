@@ -1,13 +1,18 @@
-import React, { Component } from "react"
-import Loadable from "@loadable/component";
+import React, { Component } from 'react';
 import { Container } from './p5.css';
+import { loadableP5 as P5Wrapper } from './loadable';
 import Sketch from './sketch';
 
-const P5Wrapper = Loadable(() => import('react-p5-wrapper'));
-
-export default class App extends Component{
-    
+export default class App extends Component {
   render() {
-    return <Container><P5Wrapper sketch={Sketch} /></Container>
+    if (typeof window !== 'undefined') {
+      return (
+        <Container>
+          <P5Wrapper sketch={Sketch} />
+        </Container>
+      );
+    } else {
+      return null;
+    }
   }
 }

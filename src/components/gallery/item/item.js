@@ -5,9 +5,9 @@ import { Link } from 'gatsby';
 import { Title, Copy } from './item.css';
 
 const Item = ({ fields, frontmatter }) => {
-  let link
+  let link;
 
-  if (fields.slug.includes("private")){
+  if (fields.slug.includes('private')) {
     link = (
       <a href={fields.slug}>
         <GatsbyImage
@@ -15,7 +15,7 @@ const Item = ({ fields, frontmatter }) => {
           alt={frontmatter.title}
         />
       </a>
-    )
+    );
   } else {
     link = (
       <Link to={fields.slug}>
@@ -24,7 +24,7 @@ const Item = ({ fields, frontmatter }) => {
           alt={frontmatter.title}
         />
       </Link>
-    )
+    );
   }
 
   return (
@@ -35,7 +35,7 @@ const Item = ({ fields, frontmatter }) => {
         <Copy>{frontmatter.description}</Copy>
       </figcaption>
     </figure>
-  )
+  );
 };
 
 Item.propTypes = {

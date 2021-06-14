@@ -10,19 +10,19 @@ import { timeout } from 'constants/transition';
 const Header = ({ title }) => (
   <motion.div
     initial={{
-      opacity: 0
+      opacity: 0,
     }}
-    animate= {{
+    animate={{
       opacity: 1,
       delay: timeout * 2,
     }}
-    exit= {{
+    exit={{
       opacity: 0,
       delay: timeout * 2,
     }}
-    transition= {{
-      type: "easeInOut",
-      duration: 0.6
+    transition={{
+      type: 'easeInOut',
+      duration: 0.6,
     }}
   >
     <Container>

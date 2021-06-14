@@ -9,15 +9,15 @@ class Transition extends PureComponent {
 
     return (
       <AnimatePresence exitBeforeEnter>
-        <motion.div 
+        <motion.div
           key={location.pathname}
-          initial= {{ opacity: 0 }}
-          animate= {{ opacity: 1, delay: timeout, delayChildren: timeout }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, delay: timeout, delayChildren: timeout }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
           layout
-          > 
-            {children}
+        >
+          {children}
         </motion.div>
       </AnimatePresence>
     );

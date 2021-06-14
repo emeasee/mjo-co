@@ -19,7 +19,7 @@ const Index = ({ data }) => (
       </Title>
     </Box>
     <Gallery items={data.allMarkdownRemark.nodes} />
-    <P5/>
+    <P5 />
   </Layout>
 );
 
