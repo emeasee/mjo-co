@@ -20,5 +20,18 @@ export const replaceRenderer = ({
   setHeadComponents(styleElement);
 };
 
+export const onRenderBody = ({ setPostBodyComponents }) => {
+  setPostBodyComponents([
+    <script 
+      key="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"
+    />,
+    <script 
+      key="https://cdn.rawgit.com/MAKIO135/73e5cb2c456084a9c356f9c3f89f8803/raw/3f4d08bf3c88c326702eff34bb621019b1ae5581/gfont.min.js"
+      src="https://cdn.rawgit.com/MAKIO135/73e5cb2c456084a9c356f9c3f89f8803/raw/3f4d08bf3c88c326702eff34bb621019b1ae5581/gfont.min.js"
+    />
+  ]);
+}
+
 // Page Transitions
 export const wrapPageElement = wrapPageElementWithTransition;

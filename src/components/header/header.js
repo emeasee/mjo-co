@@ -6,6 +6,8 @@ import { Container } from './header.css';
 import Title from 'components/title';
 import Nav from 'components/header/nav';
 import { timeout } from 'constants/transition';
+import P5 from 'components/p5';
+
 
 const Header = ({ title }) => (
   <motion.div
@@ -27,7 +29,8 @@ const Header = ({ title }) => (
   >
     <Container>
       <Link to="/">
-        <Title as="h1">{title}</Title>
+        {/* <Title as="h1">{title}</Title> */}
+        <P5 />
       </Link>
 
       <Nav />
