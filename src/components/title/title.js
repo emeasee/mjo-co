@@ -11,7 +11,7 @@ const Title = ({ children, as = 'span', size }) => {
 };
 
 Title.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.object.isRequired,
   as: PropTypes.string,
   size: PropTypes.oneOf(['large']),
 };

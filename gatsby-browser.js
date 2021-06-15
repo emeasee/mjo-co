@@ -3,6 +3,20 @@ import 'prismjs/themes/prism.css';
 import AppProvider from 'store/provider';
 import wrapPageElementWithTransition from 'helpers/wrapPageElement';
 
+const addScript = url => {
+  const script = document.createElement("script")
+  script.src = url
+  script.async = true
+  document.body.appendChild(script)
+}
+
+export const onClientEntry = () => {
+  window.onload = () => {
+    addScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js');
+    addScript('https://cdn.rawgit.com/MAKIO135/73e5cb2c456084a9c356f9c3f89f8803/raw/3f4d08bf3c88c326702eff34bb621019b1ae5581/gfont.min.js');
+  }
+}
+
 // React Context in Browser
 // eslint-disable-next-line react/prop-types
 export const wrapRootElement = ({ element }) => {
