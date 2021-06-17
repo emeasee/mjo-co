@@ -5,7 +5,7 @@ description: "Urbanode"
 cover: "UrbanISO_Page_04.jpeg"
 ---
 
-<iframe src="https://slides.com/mjoco/urbannode/embed?style=light&byline=hidden&share=hidden" width="720" height="480" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://slides.com/mjoco/urbannode/embed?style=light&byline=hidden&share=hidden" title="Urbanode" width="720" height="520" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 UrbanISO was a project at CIID done in two parts. First, a standard to describe and allow access to every urban sensor, and a simplified color barcode that could readable at very low resolutions to allow individual addressing of each sensor. We created a proof of concept iPhone application in C++ that would read in these color-coded barcodes and turn the data into a Ipv6 address. 
 

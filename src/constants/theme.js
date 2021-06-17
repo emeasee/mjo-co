@@ -6,7 +6,7 @@ export const maxWidth_lg = '32rem';
 export const maxWidth_xl = '46rem';
 export const maxWidth_2xl = '58rem';
 export const maxWidth_3xl = '66rem';
-export const maxWidth_4xl = '72rem';
+export const maxWidth_4xl = '75rem';
 export const maxWidth_full = '100%';
 export const maxWidth_wrapper = maxWidth_4xl;
 

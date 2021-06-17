@@ -1,21 +1,16 @@
-Find the repository [on GitHub](https://github.com/fabe/gatsby-universal).
 
-```bash
-# Installation
-gatsby new my-site https://github.com/fabe/gatsby-universal
+> “For the world is an ever-elusive and ever-disappointing mirage only from
+> the standpoint of someone standing aside from it—as if it were quite
+> other than himself—and then trying to grasp it.
+> 
+> But a third response is possible. Not withdrawal, not stewardship on
+> the hypothesis of a future reward, but the fullest collaboration with the
+> world as a harmonious system of contained conflicts — based on the
+> realization that the only real "I" is the whole endless process.”
+> 
+> -Alan Watts
 
-# To develop
-yarn develop
 
-# To build
-yarn build
-
-# To test SSR (for Lighthouse etc.)
-yarn ssr
-
-# To format JS (precommit)
-yarn format
-
-# To generate favicons (included in `build`)
-yarn build:favicons
-```
+> Old portfolio [on Webflow](https://mjoco.webflow.io)  
+> Boring career stuff [on LinkedIn](https://fr.linkedin.com/in/macoosthuizen)  
+> Web source [on GitHub](https://github.com/emeasee/mjo-co)  

@@ -9,7 +9,7 @@
     "format": "prettier --config ./.prettierrc --write src/**/*.{css,js}",
     "build:dir": "mkdirp ./public/icons/",
     "build:favicons": "node scripts/favicons",
-    "build:encrypt": "cross-var find ./public/posts/private/* -type f -name '*.html' -exec staticrypt {} $PASSWORD --output {} \\;",
+    "build:encrypt": "cross-var find ./public/posts/private/* -type f -name '*.html' -exec staticrypt {} $PASSWORD --output {} -f scripts/password_template.html \\;",
     "build": "npm run build:dir && npm run build:favicons && gatsby build && npm run build:encrypt",
     "test": "ava **/*.test.js --verbose",
     "clean": "gatsby clean"
