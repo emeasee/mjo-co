@@ -5,4 +5,16 @@ description: "Mass Responsive Device"
 cover: "4.png"
 ---
 
-<iframe src='https://slides.com/seldo/jamstack-survey-2020/embed?style=light&byline=hidden&share=hidden' title='test' width="700" height="400" scrolling="no" frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
+<div class="vimeo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/22597868?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+The Mass Responsive Device is a project created during the Computational Design module at CIID.
+
+The device reads raw data from text files, image files and even saved code and responds in a way that reflects the way you have organised the information in the storage device's file structure. Large file-sizes or complex organisation warrant a specific response from the Mass Responsive Device's which, just like human language, forms the composition and tone of the reply. Other variables warrant other responses but ultimately the purpose of the reply was to provide the translation for your storage device's 'voice'.
+
+<iframe src='https://slides.com/mjoco/mrd/embed?style=light&byline=hidden&share=hidden' title='MRD' width="720" height="520" scrolling="no" frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
+
+Thanks to Dennis Paul and Patrick Kocklik from The Product for their great course and help throughout.
+
+Created with Processing. Source: [DOWNLOAD](/MRD_source.zip)
+
+Credit to Earsmack for the music: [mcrpmusic.bandcamp.com](https://mcrpmusic.bandcamp.com)

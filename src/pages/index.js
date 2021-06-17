@@ -53,7 +53,7 @@ export const query = graphql`
           description
           cover {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, height: 500, quality: 90)
+              gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1.5, height: 500, quality: 90)
             }
           }
         }
